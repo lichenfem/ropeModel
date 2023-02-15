@@ -15,7 +15,7 @@ print('workdir set to: ' + str(workdir))
 # STEP 2:
 # rope level geometrical configs
 design = "Rope77"               # name of the design
-length = 40.0                   # length of the rope
+length = 20.0                   # length of the rope
 gap = 0.0                       # artificial gap between wires set by the user
 strandLayDirections = [1, 1]        # list, strandLayDirections[i]=1/-1 means strands in layer i are right/left hand lay
                                     # note that in rope, it is possible for neighbouring layers of strands to have opposite
@@ -62,28 +62,13 @@ strandSettings[1] = {'nLayers': 2,                  # number of layers
 # specify loading conditions
 targetAxialStrain = 0.02        # tension strain
 
-
-# designate material properties, designate path to folder of wire properties
-PathFolderExpData = os.path.join(workdir, 'wireMatProp')
-Filei = [
-    "D1_1_17S.json",  # wire of 1st layer
-    "D2_1_17S.json",  # wire of 2nd layer
-    "D3_1_17S.json",  # wire of 3rd layer
-         ]
-pathsToCalibratedData = [os.path.join(PathFolderExpData, Filei[i]) for i in range(len(Filei))]  # list of str
-materialNames = ["MaterialCore", "MaterialLayer1", "MaterialLayer2"]
-poissonRatios = [0.3, 0.3, 0.3]
-densities = [7.872 * pow(10, -9), 7.872 * pow(10, -9), 7.872 * pow(10, -9)]  # low carbon steel: 7.872 g/cm3
-
-
-meshSize = 0.05     # set size of uniform mesh
+meshSize = 0.1     # set size of uniform mesh
 # prompt info about how many elements will be used to mesh the circumferences of different wires
 for iLayerInRope in range(nLayersOfStrandInRope):
     for iLayer in range(strandSettings[iLayerInRope]['nLayers']):
         nelem = ceil(np.pi * strandSettings[iLayerInRope]['dWiresExp'][iLayer] / meshSize)
         print('strand layer: ' + str(iLayerInRope) + ', wire layer: ' + str(iLayer) + ': '
               + str(nelem) + ' elements on wire circumference.')
-
 
 #------------------------------------- above are use input -----------------------------------
 
@@ -185,7 +170,7 @@ if True:
         for strand in strands[iLayerInRope]:
             # ax = strand.plotCrossSection(ax=ax, CircWireSec=True, plotCentroid=True)
             strand.plot(plotLocalBasis=0, ax=ax)
-    fig.savefig(os.path.join(workdir, 'centroidLinesOfRope.png'), dpi=300, transparent=True)
+    fig.savefig(os.path.join(workdir, '', 'centroidLinesOfRope.png'), dpi=300, transparent=True)
     plt.close('all')
 
 # plot the rope cross section at z=0
