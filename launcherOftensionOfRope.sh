@@ -13,7 +13,7 @@
 
 # USELESS TO HAVE LESS THAN 10knodes per CPU!
 
-onIris=1
+# onIris=1
 
 ### Load latest available ABAQUS
 module load cae/ABAQUS
