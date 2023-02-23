@@ -5,6 +5,7 @@ import json
 from math import floor, ceil
 from source.classes.StrandData import StrandData
 from source.utilities.Geometry import getwireLayRadiiInStrand
+from source.utilities.calLayRadiiOfHelicalStrandInRope import calLayRadiiOfHelicalStrandInRope
 
 #------------------------------------- below are use input -----------------------------------
 # set work directory to store generated files from this script
@@ -17,14 +18,6 @@ print('workdir set to: ' + str(workdir))
 design = "Rope77"               # name of the design
 length = 20.0                   # length of the rope
 gap = 0.0                       # artificial gap between wires set by the user
-strandLayDirections = [1, 1]        # list, strandLayDirections[i]=1/-1 means strands in layer i are right/left hand lay
-                                    # note that in rope, it is possible for neighbouring layers of strands to have opposite
-                                    # lay direction as this is done to make the rope torsion resistent.
-nLayersOfStrandInRope = 2           # int, number of layers of strands in the rope
-nStrandsPerLayerInRope = [1, 6]     # list of int, number of strands in each layer
-strandLayLengthsInRope = [np.inf, 40.0]   # list of float, means the lay length of strands in each layer of the rope, inf means straight for central strand
-phaseAngleOfStrandInRope = [0, 0]   # list of float, phaseAngleOfStrandInRope[i] is phase angle of starting strand in layer i
-
 
 # designate material properties, designate path to folder of wire properties
 PathFolderExpData = os.path.join(workdir, 'wireMatProp')
@@ -38,33 +31,50 @@ materialNames = ["d1", "d23", "d4"]
 poissonRatios = [0.3, 0.3, 0.3]
 densities = [7.872 * pow(10, -9), 7.872 * pow(10, -9), 7.872 * pow(10, -9)]  # low carbon steel: 7.872 g/cm3
 
-
 # information of wires in each layer of strand
 strandSettings = {}
-strandSettings[0] = {'nLayers': 2,                  # number of layers
+strandSettings[0] = {'nLays': np.nan,               # number of lays, TBD (to be determined)
+                     'nLayers': 2,                  # number of layers
                      'nWiresPerLayer': [1, 6],      # number of wires per layer (innermost to outmost)
+                     'wireLayRadii': [0.0, 0.0],    # to be determined
                      'dWiresExp': [1.076, 0.964],   # diameters of wires of each layer from experimental data
-                     'phaseAngle': [0, 0],          # phase angle of starting wire of each layer
+                     'phaseAngle': [0, 0],          # phase angle of starting wire of each layer, to be adjusted if required
                      'wireLayLength': 18.10,        # !unique for all wires in the strand
                      'wireLayDirection': [1, 1],    # 1 for right hand lay, -1 for left hand lay
+                     'diameter': np.nan,            # strand diameter, TBD
+                     'strandLayRadius': 0.0,        # 0 for straight strand, np.nan is the strandLayRadius for the strand is not determined yet.
+                     'strandLayLength': np.inf,      # np.inf for straight strand
+                     'strandLayDirection': 1,       # 1 for straight or right lay, -1 for left lay
+                     'strandLayer': 0,              # counter of the layer of strand in rope, 0 for central strand
+                     'nStrandsInStrandLayer': 1,     # number of strand(s) in the strand layer of the rope
+                     'angleOffsetOfStartingStrandInStrandLayer': 0.0, # to be determined later
                      'materialNames': [['d1'], ['d23' for i in range(6)]],  # identifiers of material for each wire
+
                     }   # setting of wires in strand(s) of layer 0
-strandSettings[1] = {'nLayers': 2,                  # number of layers
+strandSettings[1] = {'nLays': np.nan,               # number of lays, TBD
+                     'nLayers': 2,                  # number of layers
                      'nWiresPerLayer': [1, 6],
+                     'wireLayRadii': [0.0, 0.0],    # to be determined
                      'dWiresExp': [0.964, 0.889],
-                     'phaseAngle': [0, 0],
+                     'phaseAngle': [0, 0],          # init to 0, TBD, [0, 0+0.5236250000000005]
                      'wireLayLength': 22.20,
                      'wireLayDirection': [-1, -1],
+                     'diameter': np.nan,                        # strand diameter, TBD
+                     'strandLayRadius': np.nan,     # set to np.nan when TBD, 2.6247693695690484
+                     'strandLayLength': 40.0,
+                     'strandLayDirection': 1,
+                     'strandLayer': 1,
+                     'nStrandsInStrandLayer': 6,
+                     'angleOffsetOfStartingStrandInStrandLayer': 0.0,
                      'materialNames': [['d23'], ['d4' for i in range(6)]],  # identifiers of material for each wire
                     }   # setting of wires in strand(s) of layer 1
-
 
 # specify loading conditions
 targetAxialStrain = 0.02        # tension strain
 
 meshSize = 0.1     # set size of uniform mesh
 # prompt info about how many elements will be used to mesh the circumferences of different wires
-for iLayerInRope in range(nLayersOfStrandInRope):
+for iLayerInRope in range(len(strandSettings.keys())):
     for iLayer in range(strandSettings[iLayerInRope]['nLayers']):
         nelem = ceil(np.pi * strandSettings[iLayerInRope]['dWiresExp'][iLayer] / meshSize)
         print('strand layer: ' + str(iLayerInRope) + ', wire layer: ' + str(iLayer) + ': '
@@ -73,6 +83,15 @@ for iLayerInRope in range(nLayersOfStrandInRope):
 #------------------------------------- above are use input -----------------------------------
 
 #------------------------------------- below are automatic processing -----------------------------------
+nLayersOfStrandInRope = len(strandSettings.keys())           # int, number of layers of strands in the rope
+strandLayDirections = [strandSettings[i]['strandLayDirection'] for i in range(nLayersOfStrandInRope)]
+# list, strandLayDirections[i]=1/-1 means strands in layer i are right/left hand lay
+# note that in rope, it is possible for neighbouring layers of strands to have opposite
+# lay direction as this is done to make the rope torsion resistent.
+nStrandsPerLayerInRope = [strandSettings[i]['nStrandsInStrandLayer'] for i in range(nLayersOfStrandInRope)]    # list of int, number of strands in each layer
+strandLayLengthsInRope = [strandSettings[i]['strandLayLength'] for i in range(nLayersOfStrandInRope)]   # list of float, means the lay length of strands in each layer of the rope, inf means straight for central strand
+
+
 # compute number of lays for strands in each layer of the rope
 for iLayerInRope in range(nLayersOfStrandInRope):
     strandLayLength = strandLayLengthsInRope[iLayerInRope]
@@ -104,22 +123,13 @@ for iLayerInRope in range(nLayersOfStrandInRope):
                                            writeToFile='',
                                            gap=gap)
     strandSettings[iLayerInRope]['wireLayRadii'] = wireLayRadii.tolist()                    # store info
-    strandSettings[iLayerInRope]['diameter'] = (wireLayRadii[-1]+rWiresPerLayer[-1])*2.0    # store strand diameter
+    strandSettings[iLayerInRope]['diameter'] = float((wireLayRadii[-1]+rWiresPerLayer[-1])*2.0)    # store strand diameter
 
 
-# compute strand lay radius
-rStrandsPerLayerInRope = [strandSettings[iLayerInRope]['diameter']/2.0 for iLayerInRope in range(nLayersOfStrandInRope)]
-strandLayRadii = getwireLayRadiiInStrand(nLayers=nLayersOfStrandInRope,
-                                         nWiresPerLayer=nStrandsPerLayerInRope,
-                                         rWiresPerLayer=rStrandsPerLayerInRope,
-                                         wireLayLength=strandLayLengthsInRope,
-                                         phaseAngle=phaseAngleOfStrandInRope,
-                                         strandRadius=sum(rStrandsPerLayerInRope)*2,     # can be arbitrary large
-                                         writeToFile='',
-                                         gap=gap)      # compute the wireLayRadii for wires in the straight central strand
-#
-for iLayerInRope in range(nLayersOfStrandInRope):
-    strandSettings[iLayerInRope]['strandLayRadius'] = strandLayRadii[iLayerInRope]      # save info into dict
+# compute strand lay radii as well as the phase angles angleOffsetOfStartingStrandInStrandLayer
+strandLayRadii, strandSettings = calLayRadiiOfHelicalStrandInRope(strandSettings, gap=gap)
+phaseAngleOfStrandInRope = [strandSettings[i]['angleOffsetOfStartingStrandInStrandLayer'] for i in range(nLayersOfStrandInRope)]
+
 
 
 # creates all strands
@@ -157,8 +167,7 @@ for iLayerInRope in range(nLayersOfStrandInRope):
                             )                                   # construct strand object
 
         strands[iLayerInRope].append(strand)
-
-    # S2.projectEllipticalCrossSection(zval=0.0, seedSpacing=0.1)
+        # strand.projectEllipticalCrossSection(zval=0.0, seedSpacing=0.1)     # calculate elliptical profiles of strand
 
 
 # plot the centroid lines of the wires in the rope if required
@@ -229,7 +238,6 @@ settings['materialNames'] = materialNames
 settings['poissonRatios'] = poissonRatios
 settings['densities'] = densities
 settings['pathsToCalibratedData'] = pathsToCalibratedData
-
 
 # save to configuration.json
 a_file = open(os.path.join(workdir, 'configuration.json'), "w")    # save to file

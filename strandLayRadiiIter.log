@@ -1,0 +1,124 @@
+workdir set to: /home/lichen/Dropbox/ropemodels/scripts/ropeModel
+strand layer: 0, wire layer: 0: 34 elements on wire circumference.
+strand layer: 0, wire layer: 1: 31 elements on wire circumference.
+strand layer: 1, wire layer: 0: 31 elements on wire circumference.
+strand layer: 1, wire layer: 1: 28 elements on wire circumference.
+----------
+current orientationOfStrandSec = 0.0
+current strandLayRadius = 2.872999999998753
+----------
+current orientationOfStrandSec = 0.00025
+current strandLayRadius = 2.87299994209441
+----------
+current orientationOfStrandSec = 0.0005
+current strandLayRadius = 2.8729997683739015
+----------
+current orientationOfStrandSec = 0.00075
+current strandLayRadius = 2.872999478844707
+----------
+current orientationOfStrandSec = 0.00125
+current strandLayRadius = 2.872998552342805
+----------
+current orientationOfStrandSec = 0.0017500000000000003
+current strandLayRadius = 2.872997162593693
+----------
+current orientationOfStrandSec = 0.0027500000000000007
+current strandLayRadius = 2.872992993348852
+----------
+current orientationOfStrandSec = 0.003750000000000001
+current strandLayRadius = 2.8729869711101834
+----------
+current orientationOfStrandSec = 0.005750000000000002
+current strandLayRadius = 2.8729693676787926
+----------
+current orientationOfStrandSec = 0.0077500000000000025
+current strandLayRadius = 2.8729443523718445
+----------
+current orientationOfStrandSec = 0.011750000000000003
+current strandLayRadius = 2.8728720865652013
+----------
+current orientationOfStrandSec = 0.015750000000000004
+current strandLayRadius = 2.8727701748448955
+----------
+current orientationOfStrandSec = 0.023750000000000004
+current strandLayRadius = 2.8727248181306777
+----------
+current orientationOfStrandSec = 0.03175000000000001
+current strandLayRadius = 2.872662199134145
+----------
+current orientationOfStrandSec = 0.047750000000000015
+current strandLayRadius = 2.8721810163737906
+----------
+current orientationOfStrandSec = 0.06375000000000003
+current strandLayRadius = 2.8716410065969606
+----------
+current orientationOfStrandSec = 0.09575000000000006
+current strandLayRadius = 2.869936016610406
+----------
+current orientationOfStrandSec = 0.12775000000000009
+current strandLayRadius = 2.8675466409387824
+----------
+current orientationOfStrandSec = 0.19175000000000014
+current strandLayRadius = 2.8704740918225773
+----------
+current orientationOfStrandSec = 0.15975000000000011
+current strandLayRadius = 2.8683079360051473
+----------
+current orientationOfStrandSec = 0.09575000000000006
+current strandLayRadius = 2.869936016610406
+----------
+current orientationOfStrandSec = 0.1437500000000001
+current strandLayRadius = 2.8670711877157458
+----------
+current orientationOfStrandSec = 0.15975000000000011
+current strandLayRadius = 2.8683079360051473
+----------
+current orientationOfStrandSec = 0.1357500000000001
+current strandLayRadius = 2.866985996337599
+----------
+current orientationOfStrandSec = 0.12775000000000009
+current strandLayRadius = 2.8675466409387824
+----------
+current orientationOfStrandSec = 0.1397500000000001
+current strandLayRadius = 2.8666910818147313
+----------
+current orientationOfStrandSec = 0.1437500000000001
+current strandLayRadius = 2.8670711877157458
+----------
+current orientationOfStrandSec = 0.1377500000000001
+current strandLayRadius = 2.8668271696037566
+----------
+current orientationOfStrandSec = 0.1417500000000001
+current strandLayRadius = 2.866884660009747
+----------
+current orientationOfStrandSec = 0.1387500000000001
+current strandLayRadius = 2.8667449549986097
+----------
+current orientationOfStrandSec = 0.1407500000000001
+current strandLayRadius = 2.866788751365487
+----------
+current orientationOfStrandSec = 0.1392500000000001
+current strandLayRadius = 2.8667031472776863
+----------
+current orientationOfStrandSec = 0.1402500000000001
+current strandLayRadius = 2.866740136596187
+----------
+current orientationOfStrandSec = 0.1395000000000001
+current strandLayRadius = 2.8666820682989216
+----------
+current orientationOfStrandSec = 0.1392500000000001
+current strandLayRadius = 2.8667031472776863
+----------
+current orientationOfStrandSec = 0.1396250000000001
+current strandLayRadius = 2.8666787493917827
+----------
+current orientationOfStrandSec = 0.13975000000000012
+current strandLayRadius = 2.8666910818147313
+----------
+current orientationOfStrandSec = 0.1395625000000001
+current strandLayRadius = 2.8666767803099598
+Finish computing lay radius of strand in layer: 1.
+orientation of strand cross section = 0.1395625000000001
+strand lay radius = 2.8666767803099598
+----------
+Congfiguration of Rope77 saved to /home/lichen/Dropbox/ropemodels/scripts/ropeModel/configuration.json
