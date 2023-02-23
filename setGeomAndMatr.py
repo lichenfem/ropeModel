@@ -2,6 +2,8 @@ import os
 import sys
 import numpy as np
 import json
+import warnings
+import time
 from math import floor, ceil
 from source.classes.StrandData import StrandData
 from source.utilities.Geometry import getwireLayRadiiInStrand
@@ -127,7 +129,16 @@ for iLayerInRope in range(nLayersOfStrandInRope):
 
 
 # compute strand lay radii as well as the phase angles angleOffsetOfStartingStrandInStrandLayer
-strandLayRadii, strandSettings = calLayRadiiOfHelicalStrandInRope(strandSettings, gap=gap)
+if True:
+    start = time.time()
+    strandLayRadii, strandSettings = calLayRadiiOfHelicalStrandInRope(strandSettings, gap=gap)
+    end = time.time()
+    print('timelapse for computing strand lay radius = ' + str(end-start) + ' secs.')
+else:
+    warnings.warn('strandLayRadii provided instead of ccomputed!\n', RuntimeWarning)
+    strandLayRadii = [0.0, 2.8666767803099598]
+    strandSettings[1]['strandLayRadius'] = 2.8666767803099598
+    strandSettings[1]['phaseAngle'] = [0.0, 0.1395625000000001]
 phaseAngleOfStrandInRope = [strandSettings[i]['angleOffsetOfStartingStrandInStrandLayer'] for i in range(nLayersOfStrandInRope)]
 
 
