@@ -5,120 +5,353 @@ strand layer: 1, wire layer: 0: 31 elements on wire circumference.
 strand layer: 1, wire layer: 1: 28 elements on wire circumference.
 ----------
 current orientationOfStrandSec = 0.0
-current strandLayRadius = 2.872999999998753
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8156467708674923
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9152503157543925
+	strandLayRadius:2.873, minimum inter-wire distance: -0.046728822010091764
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.4602986625447387
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.19506016714250363
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06899661497378473
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.010693739383593526
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.01722712261779158
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.0034144553182817727
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.003603470186407054
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 8.536952845517032e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0016668393436179985
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0007913075185650431
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.0003531119605592048
+current strandLayRadius = 2.9419516601562505
+----------
+----------
+current orientationOfStrandSec = 0.11635528346628862
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8369001213216791
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9152274663124793
+	strandLayRadius:2.873, minimum inter-wire distance: -0.046799229173008716
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.46163201786649743
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.19583743762698647
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.0690889470752778
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.01079137845035838
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.016777414479944297
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.0029535058444766227
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.0038751899214113372
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 0.00044980715229980817
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0012546204351079338
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.00040309786413328386
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: 2.3182031777424505e-05
+current strandLayRadius = 2.9419516601562505
+----------
+----------
+current orientationOfStrandSec = 0.23271056693257725
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8697603053574141
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9156170468072822
+	strandLayRadius:2.873, minimum inter-wire distance: -0.04639695254716436
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.4621954684026337
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.19744849383407637
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06898379304558921
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.01054474480400236
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.017095281463421097
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.0034557087507314233
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.0035002168834191716
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 1.1078626320215612e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0017251215270157605
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0008577214871616778
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.0004234962425305744
+current strandLayRadius = 2.9419516601562505
+----------
+----------
+current orientationOfStrandSec = 0.34906585039886584
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8931785407288375
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9151937666436014
+	strandLayRadius:2.873, minimum inter-wire distance: -0.04683234922399848
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.46152884856536236
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.19657476630745752
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06911305718322858
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.010969006456952535
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.017204634168358046
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.0033004273396547434
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.003789460147845758
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 0.0002332070756867477
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.001536450301198533
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0006523300464245096
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.00020973839305526987
+current strandLayRadius = 2.9419516601562505
+----------
+----------
+current orientationOfStrandSec = 0.4654211338651545
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.831718523560995
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9152047587746621
+	strandLayRadius:2.873, minimum inter-wire distance: -0.04683511823461861
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.4602563389003209
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.19536180075979614
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06897285282830357
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.010596543463540775
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.01666987412193688
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.0031696387721127373
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.0036571342416983343
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 0.00022956178910771285
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0014735983227706084
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0006229065547314061
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.0001968942462028389
+current strandLayRadius = 2.9419516601562505
+----------
+----------
+current orientationOfStrandSec = 0.5817764173314431
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.7892756045338616
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9158658679378515
+	strandLayRadius:2.873, minimum inter-wire distance: -0.04641405688767275
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.460074676472944
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.19498379345071948
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06902790363194322
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.010653822817618619
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.01714665849898034
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.0034782950604866913
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.0035306790616520534
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 1.1810773209774972e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0017368512530633318
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0008634207898244872
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.0004260299300339332
+current strandLayRadius = 2.9419516601562505
+----------
+----------
+current orientationOfStrandSec = 0.6981317007977317
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8367362809274989
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9153634078334121
+	strandLayRadius:2.873, minimum inter-wire distance: -0.04679352495959388
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.46002065464095554
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.19499143107870087
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06904637016716486
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.01055607264968672
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.017238367070597227
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.003471475087401643
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.003510459939850219
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 1.1441074611817648e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0017320414085449931
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0008608048170936078
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.00042480785289833456
+current strandLayRadius = 2.9419516601562505
+----------
+----------
+current orientationOfStrandSec = 0.8144869842640203
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8872538759114418
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9151878376661409
+	strandLayRadius:2.873, minimum inter-wire distance: -0.046737460876554726
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.46002912111130545
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.19500670616212012
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06901131853307596
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.010539355688044094
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.016873729066567367
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.003328813088474991
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.003532040666748837
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 8.318777640015096e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0016274339222349665
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0007732765456570645
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.00034533252219448585
+current strandLayRadius = 2.9419516601562505
+----------
+----------
+current orientationOfStrandSec = 0.930842267730309
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8608964103683521
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9154247288273802
+	strandLayRadius:2.873, minimum inter-wire distance: -0.046063688355590826
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.4600560417698889
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.19502961835590726
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06906671802381703
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.010573338989319447
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.01703266577818907
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.00337610586845849
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.0035627683149119793
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 8.427502820829158e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.001648191337475735
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0007825256458505736
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.0003492669960073469
+current strandLayRadius = 2.9419516601562505
+----------
+----------
+current orientationOfStrandSec = 1.0471975511965976
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8156467708674925
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9152503157543923
+	strandLayRadius:2.873, minimum inter-wire distance: -0.04672882201009154
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.46029866254473895
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.1950601671425034
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06899661497378451
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.010693739383593415
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.01722712261779158
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.0034144553182814397
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.003603470186407054
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 8.536952845517032e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0016668393436179985
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0007913075185652652
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.0003531119605593158
+current strandLayRadius = 2.9419516601562505
+----------
+**********
+setting initial guess of orientation to: 0.0
+----------
+current orientationOfStrandSec = 0.0
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8156467708674923
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9152503157543925
+	strandLayRadius:2.873, minimum inter-wire distance: -0.046728822010091764
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.4602986625447387
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.19506016714250363
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06899661497378473
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.010693739383593526
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.01722712261779158
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.0034144553182817727
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.003603470186407054
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 8.536952845517032e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0016668393436179985
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0007913075185650431
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.0003531119605592048
+current strandLayRadius = 2.9419516601562505
+----------
 ----------
 current orientationOfStrandSec = 0.00025
-current strandLayRadius = 2.87299994209441
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8154646800445026
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9152558063917966
+	strandLayRadius:2.873, minimum inter-wire distance: -0.04671950930597191
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.4602864687744084
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.1950534408957243
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.0690025547940506
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.010683581414851595
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.01722992826514602
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.0034209624377899983
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.0035951312456147244
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 7.794490685397726e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0016738056109952826
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0007985030623940403
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.0003604220681254766
+current strandLayRadius = 2.9419516601562505
 ----------
-current orientationOfStrandSec = 0.0005
-current strandLayRadius = 2.8729997683739015
 ----------
-current orientationOfStrandSec = 0.00075
-current strandLayRadius = 2.872999478844707
+current orientationOfStrandSec = -0.00025
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8158287121702521
+	strandLayRadius:4.244, minimum inter-wire distance: 0.915245052338078
+	strandLayRadius:2.873, minimum inter-wire distance: -0.04673777665370382
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.4603111230720254
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.19506719934634464
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06899100636812106
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.01070424176715179
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.017223965669101893
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.0034076003170729896
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.003612155280637519
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 9.314116900926983e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0016595256255564905
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0007837647398308834
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.00034545472604186056
+current strandLayRadius = 2.9419516601562505
 ----------
-current orientationOfStrandSec = 0.00125
-current strandLayRadius = 2.872998552342805
 ----------
-current orientationOfStrandSec = 0.0017500000000000003
-current strandLayRadius = 2.872997162593693
+current orientationOfStrandSec = 0.000125
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8155557440993162
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9152530326706052
+	strandLayRadius:2.873, minimum inter-wire distance: -0.0467242104148301
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.46029253231445333
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.1950567657740936
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06899954348249127
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.010688617346594764
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.017228569354368672
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.003417752363761184
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.0035992574461841675
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 8.16138397048416e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0016703659091887868
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0007949486954065277
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.00035681040578339207
+current strandLayRadius = 2.9419516601562505
 ----------
-current orientationOfStrandSec = 0.0027500000000000007
-current strandLayRadius = 2.872992993348852
 ----------
-current orientationOfStrandSec = 0.003750000000000001
-current strandLayRadius = 2.8729869711101834
+current orientationOfStrandSec = 0.000125
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8155557440993162
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9152530326706052
+	strandLayRadius:2.873, minimum inter-wire distance: -0.0467242104148301
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.46029253231445333
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.1950567657740936
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06899954348249127
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.010688617346594764
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.017228569354368672
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.003417752363761184
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.0035992574461841675
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 8.16138397048416e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0016703659091887868
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0007949486954065277
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.00035681040578339207
+current strandLayRadius = 2.9419516601562505
 ----------
-current orientationOfStrandSec = 0.005750000000000002
-current strandLayRadius = 2.8729693676787926
 ----------
-current orientationOfStrandSec = 0.0077500000000000025
-current strandLayRadius = 2.8729443523718445
+current orientationOfStrandSec = -0.000125
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8157377602556769
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9152476556434528
+	strandLayRadius:2.873, minimum inter-wire distance: -0.046733344090218565
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.460304859464266
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.19506364500018103
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06899376926873557
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.010698947524303115
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.01722558805587371
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.003411071302369506
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.003607769464995414
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 8.921197195110864e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0016632259153686046
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0007875795329905788
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.00034932673359078237
+current strandLayRadius = 2.9419516601562505
 ----------
-current orientationOfStrandSec = 0.011750000000000003
-current strandLayRadius = 2.8728720865652013
 ----------
-current orientationOfStrandSec = 0.015750000000000004
-current strandLayRadius = 2.8727701748448955
+current orientationOfStrandSec = 6.25e-05
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8156012621500623
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9152516671118585
+	strandLayRadius:2.873, minimum inter-wire distance: -0.0467265274017572
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.460295589093378
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.195058456897091
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06899806887773119
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.010691167602033258
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.017227856964276533
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.003416114712389784
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.0036013529989186166
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 8.348083966414066e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0016686134843068023
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0007931389581480319
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.0003549720309611315
+current strandLayRadius = 2.9419516601562505
 ----------
-current orientationOfStrandSec = 0.023750000000000004
-current strandLayRadius = 2.8727248181306777
 ----------
-current orientationOfStrandSec = 0.03175000000000001
-current strandLayRadius = 2.872662199134145
+current orientationOfStrandSec = 6.25e-05
+bisection range: [1.502, 4.244]
+	strandLayRadius:1.502, minimum inter-wire distance: -0.8156012621500623
+	strandLayRadius:4.244, minimum inter-wire distance: 0.9152516671118585
+	strandLayRadius:2.873, minimum inter-wire distance: -0.0467265274017572
+	strandLayRadius:3.5585000000000004, minimum inter-wire distance: 0.460295589093378
+	strandLayRadius:3.2157500000000003, minimum inter-wire distance: 0.195058456897091
+	strandLayRadius:3.044375, minimum inter-wire distance: 0.06899806887773119
+	strandLayRadius:2.9586875000000004, minimum inter-wire distance: 0.010691167602033258
+	strandLayRadius:2.91584375, minimum inter-wire distance: -0.017227856964276533
+	strandLayRadius:2.937265625, minimum inter-wire distance: -0.003416114712389784
+	strandLayRadius:2.9479765625, minimum inter-wire distance: 0.0036013529989186166
+	strandLayRadius:2.94262109375, minimum inter-wire distance: 8.348083966414066e-05
+	strandLayRadius:2.9399433593750004, minimum inter-wire distance: -0.0016686134843068023
+	strandLayRadius:2.9412822265625005, minimum inter-wire distance: -0.0007931389581480319
+	strandLayRadius:2.9419516601562505, minimum inter-wire distance: -0.0003549720309611315
+current strandLayRadius = 2.9419516601562505
 ----------
-current orientationOfStrandSec = 0.047750000000000015
-current strandLayRadius = 2.8721810163737906
 ----------
-current orientationOfStrandSec = 0.06375000000000003
-current strandLayRadius = 2.8716410065969606
-----------
-current orientationOfStrandSec = 0.09575000000000006
-current strandLayRadius = 2.869936016610406
-----------
-current orientationOfStrandSec = 0.12775000000000009
-current strandLayRadius = 2.8675466409387824
-----------
-current orientationOfStrandSec = 0.19175000000000014
-current strandLayRadius = 2.8704740918225773
-----------
-current orientationOfStrandSec = 0.15975000000000011
-current strandLayRadius = 2.8683079360051473
-----------
-current orientationOfStrandSec = 0.09575000000000006
-current strandLayRadius = 2.869936016610406
-----------
-current orientationOfStrandSec = 0.1437500000000001
-current strandLayRadius = 2.8670711877157458
-----------
-current orientationOfStrandSec = 0.15975000000000011
-current strandLayRadius = 2.8683079360051473
-----------
-current orientationOfStrandSec = 0.1357500000000001
-current strandLayRadius = 2.866985996337599
-----------
-current orientationOfStrandSec = 0.12775000000000009
-current strandLayRadius = 2.8675466409387824
-----------
-current orientationOfStrandSec = 0.1397500000000001
-current strandLayRadius = 2.8666910818147313
-----------
-current orientationOfStrandSec = 0.1437500000000001
-current strandLayRadius = 2.8670711877157458
-----------
-current orientationOfStrandSec = 0.1377500000000001
-current strandLayRadius = 2.8668271696037566
-----------
-current orientationOfStrandSec = 0.1417500000000001
-current strandLayRadius = 2.866884660009747
-----------
-current orientationOfStrandSec = 0.1387500000000001
-current strandLayRadius = 2.8667449549986097
-----------
-current orientationOfStrandSec = 0.1407500000000001
-current strandLayRadius = 2.866788751365487
-----------
-current orientationOfStrandSec = 0.1392500000000001
-current strandLayRadius = 2.8667031472776863
-----------
-current orientationOfStrandSec = 0.1402500000000001
-current strandLayRadius = 2.866740136596187
-----------
-current orientationOfStrandSec = 0.1395000000000001
-current strandLayRadius = 2.8666820682989216
-----------
-current orientationOfStrandSec = 0.1392500000000001
-current strandLayRadius = 2.8667031472776863
-----------
-current orientationOfStrandSec = 0.1396250000000001
-current strandLayRadius = 2.8666787493917827
-----------
-current orientationOfStrandSec = 0.13975000000000012
-current strandLayRadius = 2.8666910818147313
-----------
-current orientationOfStrandSec = 0.1395625000000001
-current strandLayRadius = 2.8666767803099598
 Finish computing lay radius of strand in layer: 1.
-orientation of strand cross section = 0.1395625000000001
-strand lay radius = 2.8666767803099598
+orientation of strand cross section = 0.0
+strand lay radius = 2.9419516601562505
 ----------
+timelapse for computing strand lay radius = 1018.3815636634827 secs.
+Backend Qt5Agg is interactive backend. Turning interactive mode on.
 Congfiguration of Rope77 saved to /home/lichen/Dropbox/ropemodels/scripts/ropeModel/configuration.json
